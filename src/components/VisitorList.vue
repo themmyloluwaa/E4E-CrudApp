@@ -83,12 +83,12 @@ export default {
   },
   created() {
     //Set status to an array with the length of users
-    this.status = new Array(this.$props.user.length).fill(false);
+    this.status = new Array(this.$props.visitors.length).fill(false);
   },
   computed: {
     users() {
       //Get the user from props, so that we can watch for it
-      return this.$props.user;
+      return this.$props.visitors;
     }
   },
   watch: {
