@@ -79,7 +79,6 @@ export default {
     closeBtn(state, index) {
       this.status[index] = state;
     }
-   
   },
   created() {
     //Set status to an array with the length of users
@@ -140,8 +139,28 @@ thead {
 input {
   height: 30px;
   border-radius: 5px;
-  /* text-align: center; */
+  width: 100%;
   padding: 10px;
+}
+@media screen and (min-width: 400px) and (max-width: 700px) {
+  table {
+    width: 100%;
+  }
+  thead > tr > th {
+    word-wrap: normal;
+    text-align: left;
+  }
+  th,
+  td {
+    font-size: 0.6em;
+  }
+  .table th,
+  .table td {
+    padding-left: 0;
+  }
+  thead > tr > th {
+    text-align: center;
+  }
 }
 </style>
 

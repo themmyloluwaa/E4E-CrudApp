@@ -3,7 +3,6 @@
     <h1 class="h1">Ehealth4Everyone Attendance App</h1>
     <AddVisitors v-on:add-user="addUser" />
     <VisitorList v-bind:visitors="visitorInfo" class="header" v-on:onDelete="deleteVisitor" />
-   
   </div>
 </template>
 
